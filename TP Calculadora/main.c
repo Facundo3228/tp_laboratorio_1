@@ -2,7 +2,11 @@
 #include <stdlib.h>
 #include "calculadoraFunciones.h"
 
-
+#define MIN 0
+#define MAX 5
+#define INTENTOS 3
+#define NUMERO_MIN -1000
+#define NUMERO_MAX 1000
 
 int main()
 {
@@ -21,7 +25,7 @@ int main()
   do{
       printf("\n------------------------Menu de opciones------------------------------\n");
 
-      opcionesMenu = getMenuCalculadora("\n1. Ingrese numero A: \n2. Ingrese numero B: \n3. Calculo de operaciones: \n4. Resultados de operaciones: \n5. Salir \n\n------------------------Menu de opciones------------------------------  \nIngrese una opcion: ", "Error!!!...\n No es una opcion valida reintente: ", 0, 5, 3);
+      opcionesMenu = getMenuCalculadora("\n1. Ingrese numero A: \n2. Ingrese numero B: \n3. Calculo de operaciones: \n4. Resultados de operaciones: \n5. Salir \n\n------------------------Menu de opciones------------------------------  \nIngrese una opcion: ", "Error!!!...\n No es una opcion valida reintente: ", MIN, MAX, INTENTOS);
 
 
       getchar();
@@ -32,7 +36,7 @@ int main()
         case 1:
              //printf("Estoy pidiendo el numero A \n");
              if(flagA != 1){
-                numeroA = getIgresoDatos("Ingrese el primer numero A: ", "Error, Ingrese el primer numero A: ", -1000, 1000);
+                numeroA = getIgresoDatos("Ingrese el primer numero A: ", "Error, Ingrese el primer numero A: ", NUMERO_MIN, NUMERO_MAX);
                 printf("\t\t\nA = %d\n", numeroA);
                 flagA=1;
              }else{
@@ -43,7 +47,7 @@ int main()
         case 2:
              //printf("Estoy pidiendo el numero B \n");
              if(flagA == 1 && flagB != 1){
-                numeroB = getIgresoDatos("Ingrese el segundo numero B: ", "Error, Ingrese el segundo numero B: ", -1000, 1000);
+                numeroB = getIgresoDatos("Ingrese el segundo numero B: ", "Error, Ingrese el segundo numero B: ", NUMERO_MIN, NUMERO_MAX);
                 printf("\t\t\nB = %d\n", numeroB);
                 flagB=1;
              }else{
@@ -113,6 +117,7 @@ int main()
         break;
 
         case 5:
+             //getchar();
              printf("\n\n---------------------------------Salgo de la aplicacion-------------------------------- \n\n");
              printf("\tEsta aplicacion fue creada por Facundo Aldo Rodriguez, pertenece al TP1.");
         break;

@@ -3,33 +3,33 @@
 #include <stdlib.h>
 #include "calculadoraFunciones.h"
 
-int getMenuCalculadora(char mensaje[], char mensajeError[], int min, int max, int intentos){
+int getMenuCalculadora(char mensaje[], char mensajeError[], int valorMin, int valorMax, int valorIntentos){
   int valor;
   int contador = 0;
 
   printf("%s", mensaje);
   scanf("%d", &valor);
 
-  while(valor < min || valor > max){
+  while(valor < valorMin || valor > valorMax){
     contador++;
     printf("%s", mensajeError);
     scanf("%d", &valor);
 
-    if(contador == intentos){
-      printf("Usastes todos tus intentos...");
-      valor = max;
+    if(contador == valorIntentos){
+      printf("No son opciones validas, terminamos");
+      valor = valorMax;
     }
   }
 
   return valor;
 }
 
-int getIgresoDatos(char mensaje[], char mensajeError[], int min, int max){
+int getIgresoDatos(char mensaje[], char mensajeError[], int numeroMin, int numeroMax){
   int valor;
   printf("%s", mensaje);
   scanf("%d", &valor);
 
-  while(valor < min || valor > max){
+  while(valor < numeroMin || valor > numeroMax){
     printf("%s", mensajeError);
     scanf("%d", &valor);
   }

@@ -5,9 +5,9 @@
  *
  * \param mensaje[] char Mensaje de ingreso de dato.
  * \param mensajeError[] char Mensaje de error de dato.
- * \param min int Numero minimo.
- * \param max int Numero maximo.
- * \param intentos int Intentos por el usuario.
+ * \param valorMin int Numero minimo.
+ * \param valorMax int Numero maximo.
+ * \param valorIntentos int Intentos por el usuario.
  * \return int Devuelvo el dato numerico ingresado.
  *
  */
@@ -17,8 +17,8 @@ int getMenuCalculadora(char[], char[], int, int, int);
  *
  * \param mensaje[] char Mensaje de ingreso de dato.
  * \param mensajeError[] char Mensaje de error de dato.
- * \param min int Numero minimo.
- * \param max int Numero maximo.
+ * \param numeroMin int Numero minimo.
+ * \param numeroMax int Numero maximo.
  * \return int Devuelvo el dato numerico ingresado.
  *
  */

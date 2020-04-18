@@ -11,10 +11,15 @@
 
 1587130425 c:\users\esteb\desktop\trabajos en c\tp calculadora\calculadorafunciones.h
 
-1587130425 source:c:\users\esteb\desktop\tp_laboratorio_1\tp calculadora\main.c
+1587227998 source:c:\users\esteb\desktop\tp_laboratorio_1\tp calculadora\main.c
 	<stdio.h>
 	<stdlib.h>
 	"calculadoraFunciones.h"
 
-1587216791 c:\users\esteb\desktop\tp_laboratorio_1\tp calculadora\calculadorafunciones.h
+1587227507 c:\users\esteb\desktop\tp_laboratorio_1\tp calculadora\calculadorafunciones.h
+
+1587227998 source:c:\users\esteb\desktop\tp_laboratorio_1\tp calculadora\calculadorafunciones.c
+	<stdio.h>
+	<stdlib.h>
+	"calculadoraFunciones.h"
 
