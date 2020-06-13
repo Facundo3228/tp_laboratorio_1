@@ -25,7 +25,7 @@ int main()
   do{
       printf("\n------------------------Menu de opciones------------------------------\n");
 
-      opcionesMenu = getMenuCalculadora("\n1. Ingrese numero A: \n2. Ingrese numero B: \n3. Calculo de operaciones: \n4. Resultados de operaciones: \n5. Salir \n\n------------------------Menu de opciones------------------------------  \nIngrese una opcion: ", "Error!!!...\n No es una opcion valida reintente: ", MIN, MAX, INTENTOS);
+      opcionesMenu = getMenuCalculadora("\n1. Ingrese numero A: \n2. Ingrese numero B: \n3. Calculo de operaciones: \n4. Resultados de operaciones: \n5. Salir \n\n------------------------Menu de opciones------------------------------  \nIngrese una opcion: ", "Error!!!...\nNo es una opcion valida reintente: ", MIN, MAX, INTENTOS);
 
 
       getchar();
@@ -47,7 +47,7 @@ int main()
         case 2:
              //printf("Estoy pidiendo el numero B \n");
              if(flagA == 1 && flagB != 1){
-                numeroB = getIgresoDatos("Ingrese el segundo numero B: ", "Error, Ingrese el segundo numero B: ", NUMERO_MIN, NUMERO_MAX);
+                numeroB = getIgresoDatos("Ingrese el segundo numero B: %d", "Error, Ingrese el segundo numero B: ", NUMERO_MIN, NUMERO_MAX);
                 printf("\t\t\nB = %d\n", numeroB);
                 flagB=1;
              }else{

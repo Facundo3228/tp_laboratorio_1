@@ -1,0 +1,103 @@
+# depslib dependency file v1.0
+1592088859 source:c:\users\esteb\desktop\tp 3 laboratorio 1\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"Controller.h"
+	"parser.h"
+	"funcionesGet.h"
+
+1542946049 c:\users\esteb\desktop\tp 3 laboratorio 1\linkedlist.h
+
+1591940380 c:\users\esteb\desktop\tp 3 laboratorio 1\employee.h
+	"LinkedList.h"
+
+1591940520 c:\users\esteb\desktop\tp 3 laboratorio 1\controller.h
+	"LinkedList.h"
+	"Employee.h"
+	"funcionesGet.h"
+
+1592027978 c:\users\esteb\desktop\tp 3 laboratorio 1\funcionesget.h
+
+1592081603 source:c:\users\esteb\desktop\tp 3 laboratorio 1\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+
+1592027999 source:c:\users\esteb\desktop\tp 3 laboratorio 1\funcionesget.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funcionesGet.h"
+
+1592081313 source:c:\users\esteb\desktop\tp 3 laboratorio 1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
+1592062166 source:c:\users\esteb\desktop\tp 3 laboratorio 1\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+	"Controller.h"
+
+1542946049 c:\users\esteb\desktop\tp 3 laboratorio 1\parser.h
+
+1592088859 source:c:\users\esteb\desktop\tp_laboratorio_1\tp linkedlist\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"Controller.h"
+	"parser.h"
+	"funcionesGet.h"
+
+1542946049 c:\users\esteb\desktop\tp_laboratorio_1\tp linkedlist\linkedlist.h
+
+1591940380 c:\users\esteb\desktop\tp_laboratorio_1\tp linkedlist\employee.h
+	"LinkedList.h"
+
+1591940520 c:\users\esteb\desktop\tp_laboratorio_1\tp linkedlist\controller.h
+	"LinkedList.h"
+	"Employee.h"
+	"funcionesGet.h"
+
+1592027978 c:\users\esteb\desktop\tp_laboratorio_1\tp linkedlist\funcionesget.h
+
+1542946049 c:\users\esteb\desktop\tp_laboratorio_1\tp linkedlist\parser.h
+
+1592081603 source:c:\users\esteb\desktop\tp_laboratorio_1\tp linkedlist\employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"Employee.h"
+
+1592027999 source:c:\users\esteb\desktop\tp_laboratorio_1\tp linkedlist\funcionesget.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funcionesGet.h"
+
+1592081313 source:c:\users\esteb\desktop\tp_laboratorio_1\tp linkedlist\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Employee.h"
+
+1592062166 source:c:\users\esteb\desktop\tp_laboratorio_1\tp linkedlist\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"Employee.h"
+	"parser.h"
+	"Controller.h"
+
