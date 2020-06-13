@@ -182,14 +182,22 @@ int employee_sortEmployee(LinkedList* pArrayListEmployee)
     int retorno = -1;
 
     if(pArrayListEmployee != NULL)
+<<<<<<< HEAD
     {
 
         printf("\n\t\t>>>>>>>>>>>>>>>>>>>>> MENU DE ORDENAMIENTO <<<<<<<<<<<<<<<<<<<<<<\n");
         printf("\n\t\t_________________________________________________________________\n");
+=======
+    {
+
+        printf("\n\t\t>>>>>>>>>>>>>>>>>>>>> MENU DE ORDENAMIENTO <<<<<<<<<<<<<<<<<<<<<<\n");
+        printf("\n\t\t_________________________________________________________________\n");
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
         printf("\n\t\t| (1) ORDENAR LISTA DE EMPLEADOS POR ID                       \t|\n");
         printf("\n\t\t| (2) ORDENAR LISTA DE EMPLEADOS POR NOMBRE                   \t|\n");
         printf("\n\t\t| (3) ORDENAR LISTA DE EMPLEADOS POR SUELDO                   \t|\n");
         printf("\n\t\t| (4) ORDENAR LISTA DE EMPLEADOS POR HORAS TRABAJADAS         \t|\n");
+<<<<<<< HEAD
         printf("\n\t\t| (5) CANCELAR ORDENAMIENTO                                   \t|\n");
         printf("\n\t\t|_______________________________________________________________|\n");
 
@@ -209,32 +217,73 @@ int employee_sortEmployee(LinkedList* pArrayListEmployee)
         case 2:
             printf("\n\t\t LA LISTA SE ORDENO POR NOMBRE \n");
             ll_sort(pArrayListEmployee, employee_ordenarPorNombre, 1);
+=======
+        printf("\n\t\t| (5) CANCELAR ORDENAMIENTO                                   \t|\n");
+        printf("\n\t\t|_______________________________________________________________|\n");
+
+
+      do
+      {
+          opcion = getIntLimit("\n\t\t INGRESE UNA OPCION DEL MENU: ", "\n\t\t ERROR. \n\t\t INGRESE UNA OPCION DEL MENU: ", 1, 5, 3);
+
+        switch(opcion)
+        {
+        case 1:
+            printf("\n\t\t LA LISTA SE ORDENO POR ID \n");
+            ll_sort(pArrayListEmployee, employee_ordenarPorId, 1);
+            retorno = 0;
+            break;
+
+        case 2:
+            printf("\n\t\t LA LISTA SE ORDENO POR NOMBRE \n");
+            ll_sort(pArrayListEmployee, employee_ordenarPorNombre, 1);
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
             retorno = 0;
             break;
 
         case 3:
             printf("\n\t\t LA LISTA SE ORDENO POR SUELDO \n");
+<<<<<<< HEAD
             ll_sort(pArrayListEmployee, employee_ordenarPorSueldo, 1);
+=======
+            ll_sort(pArrayListEmployee, employee_ordenarPorSueldo, 1);
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
             retorno = 0;
             break;
 
         case 4:
             printf("\n\t\t LA LISTA SE ORDENO POR HORAS TRABAJADAS \n");
+<<<<<<< HEAD
             ll_sort(pArrayListEmployee, employee_ordenarPorHoras, 1);
+=======
+            ll_sort(pArrayListEmployee, employee_ordenarPorHoras, 1);
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
             retorno = 0;
             break;
 
         case 5:
+<<<<<<< HEAD
             printf("\n\t\t OPERACION CANCELADA \n");
+=======
+            printf("\n\t\t OPERACION CANCELADA \n");
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
             retorno = -5;
             break;
 
         default:
+<<<<<<< HEAD
             printf("\n\t\t ERROR. OPCION NO IMPLEMENTADA \n");
 
         }
 
       }while(opcion != 1 && opcion != 2 && opcion != 3 && opcion != 4 && opcion != 5);
+=======
+            printf("\n\t\t ERROR. OPCION NO IMPLEMENTADA \n");
+
+        }
+
+      }while(opcion != 1 && opcion != 2 && opcion != 3 && opcion != 4 && opcion != 5);
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
     retorno = -5;
     }
     return retorno;

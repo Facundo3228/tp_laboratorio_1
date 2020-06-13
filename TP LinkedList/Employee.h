@@ -144,7 +144,11 @@ int employee_getSueldo(Employee* this,int* sueldo);
  */
 int employee_sortEmployee(LinkedList* pArrayListEmployee);
 
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
 
 /** \brief Ordena la lista de empleados por id.
  *
@@ -153,10 +157,17 @@ int employee_sortEmployee(LinkedList* pArrayListEmployee);
  * \return int -  -1 si funciona correctamente.
  *             -  0 si no funciona correctamente.
  */
+<<<<<<< HEAD
 int employee_ordenarPorId(void* thisUno, void* thisDos);
 
 
 
+=======
+int employee_ordenarPorId(void* thisUno, void* thisDos);
+
+
+
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
 /** \brief Ordena la lista de empleados por sueldo.
  *
  * \param thisUno void* objeto generico uno

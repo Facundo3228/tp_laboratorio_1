@@ -1,4 +1,5 @@
 //*********************************** GETS ***********************************
+<<<<<<< HEAD
 
 /** \brief
  *
@@ -12,6 +13,21 @@
  */
 int getIntLimit (char mensaje[], char mensajeError[], int min, int max, int limit);
 
+=======
+
+/** \brief
+ *
+ * \param mensaje[] charmensaje Es el mensaje que será mostrado al usuario
+ * \param mensajeError[] charmensaje Es el mensaje de error que será mostrado al usuario
+ * \param min int un valor minimo
+ * \param max int un valor maximo
+ * \param limit int un limite de intentos
+ * \return int es el numeroingresado por el usuario
+ *
+ */
+int getIntLimit (char mensaje[], char mensajeError[], int min, int max, int limit);
+
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
 
 /** \brief Solicita un numero - devuelve el resultado.
  *

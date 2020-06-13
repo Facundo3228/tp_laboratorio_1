@@ -6,6 +6,7 @@
 
 
 //************ GETS ************
+<<<<<<< HEAD
 
 int getIntLimit(char mensaje[], char mensajeError[], int min, int max, int limit)
 {
@@ -45,6 +46,47 @@ int getIntLimit(char mensaje[], char mensajeError[], int min, int max, int limit
     fflush(stdin);
     return numero;
 }
+=======
+
+int getIntLimit(char mensaje[], char mensajeError[], int min, int max, int limit)
+{
+    int numero;
+    int contador = 0;
+    printf("%s", mensaje);
+
+    while(contador != 2)
+    {
+        contador = 0;
+        if (scanf("%d", &numero) != 1)
+        {
+            fflush(stdin);
+            printf("%s", mensajeError);
+        }
+        else
+        {
+            contador++;
+            if(limit == 1)
+            {
+                if(numero < min || numero > max)
+                {
+                    fflush(stdin);
+                    printf("%s", mensajeError);
+                }
+                else
+                {
+                    contador++;
+                }
+            }
+            else
+            {
+                contador++;
+            }
+        }
+    }
+    fflush(stdin);
+    return numero;
+}
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
 
 int getInt(char mensaje[])
 {

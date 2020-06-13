@@ -3,7 +3,11 @@
 
 #include "LinkedList.h"
 #include "Employee.h"
+<<<<<<< HEAD
 #include "Controller.h"
+=======
+#include "Controller.h"
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
 #include "parser.h"
 #include "funcionesGet.h"
 
@@ -12,8 +16,13 @@ int controller_loadFromText(char* path, LinkedList* pArrayListEmployee)
 {
     FILE* pArchivo;
     int retorno = -1;
+<<<<<<< HEAD
 
     pArchivo = fopen(path, "r");
+=======
+
+    pArchivo = fopen(path, "r");
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
 
     if(pArchivo!=NULL)
     {
@@ -24,15 +33,24 @@ int controller_loadFromText(char* path, LinkedList* pArrayListEmployee)
 
     return retorno;
 }
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
 
 int controller_loadFromBinary(char* path, LinkedList* pArrayListEmployee)
 {
 
     FILE* pArchivo;
     int retorno = -1;
+<<<<<<< HEAD
 
     pArchivo = fopen(path, "rb");
+=======
+
+    pArchivo = fopen(path, "rb");
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
 
     if(pArchivo != NULL)
     {
@@ -107,7 +125,11 @@ int controller_addEmployee(LinkedList* pArrayListEmployee)
         idAux = controller_nextID(pArrayListEmployee);
         printf("\n\t\t INGRESE EL NOMBRE: ");
         fflush(stdin);
+<<<<<<< HEAD
         gets(nombreChar);
+=======
+        gets(nombreChar);
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
 
         while(esSoloLetras(nombreChar)==0)
         {
@@ -117,10 +139,17 @@ int controller_addEmployee(LinkedList* pArrayListEmployee)
         }
         stringToUpper(nombreChar);
 
+<<<<<<< HEAD
 
         printf("\n\t\t INGRESE LAS HORAS TRABAJADAS: ");
         fflush(stdin);
         gets(horasChar);
+=======
+
+        printf("\n\t\t INGRESE LAS HORAS TRABAJADAS: ");
+        fflush(stdin);
+        gets(horasChar);
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
 
         while(esNumerico(horasChar) == 0)
         {
@@ -128,12 +157,21 @@ int controller_addEmployee(LinkedList* pArrayListEmployee)
             fflush(stdin);
             gets(horasChar);
         }
+<<<<<<< HEAD
         horasCharAux = atoi(horasChar);
 
 
         printf("\n\t\t INGRESE EL SUELDO: ");
         fflush(stdin);
         gets(sueldoChar);
+=======
+        horasCharAux = atoi(horasChar);
+
+
+        printf("\n\t\t INGRESE EL SUELDO: ");
+        fflush(stdin);
+        gets(sueldoChar);
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
 
         while(esNumerico(sueldoChar) == 0)
         {
@@ -142,7 +180,11 @@ int controller_addEmployee(LinkedList* pArrayListEmployee)
             gets(sueldoChar);
         }
         sueldoCharAux = atoi(sueldoChar);
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
 
         if(pEmpleado != NULL)
         {
@@ -197,16 +239,28 @@ int controller_editEmployee(LinkedList* pArrayListEmployee)
             employee_getId(empleado, &idObtenido);
 
             if(idObtenido == idCharAux)
+<<<<<<< HEAD
             {
 
                 printf("\n\t\t>>>>> MENU DE MODIFICACION DE EMPLEADO <<<<<\n");
+=======
+            {
+
+                printf("\n\t\t>>>>> MENU DE MODIFICACION DE EMPLEADO <<<<<\n");
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
                 printf("\n\t\t____________________________________________\n");
                 printf("\n\t\t| (1) MODIFICAR NOMBRE                   \t|\n");
                 printf("\n\t\t| (2) MODIFICAR HORAS TRABAJADAS         \t|\n");
                 printf("\n\t\t| (3) MODIFICAR SUELDO                   \t|\n");
+<<<<<<< HEAD
                 printf("\n\t\t| (4) CANCELAR MODIFICACION              \t|\n");
                 printf("\n\t\t|__________________________________________|\n");
 
+=======
+                printf("\n\t\t| (4) CANCELAR MODIFICACION              \t|\n");
+                printf("\n\t\t|__________________________________________|\n");
+
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
 
                 printf("\n\t\t INGRESE UNA OPCION DEL MENU: ");
                 fflush(stdin);
@@ -241,7 +295,11 @@ int controller_editEmployee(LinkedList* pArrayListEmployee)
                 case 2:
                     printf("\n\t\t INGRESE LA NUEVAS HORAS TRABAJADAS: ");
                     fflush(stdin);
+<<<<<<< HEAD
                     gets(horasChar);
+=======
+                    gets(horasChar);
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
 
                     while(esNumerico(horasChar) == 0)
                     {
@@ -254,7 +312,11 @@ int controller_editEmployee(LinkedList* pArrayListEmployee)
                     retorno = 0;
                     break;
 
+<<<<<<< HEAD
                 case 3:
+=======
+                case 3:
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
                     printf("\n\t\t INGRESE UNA NUEVO SUELDO: ");
                     fflush(stdin);
                     gets(sueldoChar);
@@ -269,7 +331,11 @@ int controller_editEmployee(LinkedList* pArrayListEmployee)
                     sueldoCharAux= atoi(sueldoChar);
                     employee_setSueldo(empleado, sueldoCharAux);
                     retorno = 0;
+<<<<<<< HEAD
                     break;
+=======
+                    break;
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
 
                 case 4:
                     opcionCharAux=4;
@@ -295,7 +361,11 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee)
     char idChar[100];
     int idCharAux;
     int idObtenido;
+<<<<<<< HEAD
     int opcionAConfirmar;
+=======
+    int opcionAConfirmar;
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
     int retorno = -1;
 
     if(pArrayListEmployee != NULL)
@@ -318,6 +388,7 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee)
             employee_getId(pEmployee, &idObtenido);
 
             if(idObtenido == idCharAux)
+<<<<<<< HEAD
             {
                 printf("\n\t\t>>>>> MENU DE ELIMINACION DE EMPLEADO <<<<<<\n");
                 printf("\n\t\t____________________________________________\n");
@@ -326,6 +397,16 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee)
                 printf("\n\t\t|__________________________________________|\n");
 
                 opcionAConfirmar = getIntLimit("\n\t\t INGRESE UNA OPCION DEL MENU: ", "\n\t\t ERROR. \n\t\t INGRESE UNA OPCION DEL MENU: ", 1, 2, 3);
+=======
+            {
+                printf("\n\t\t>>>>> MENU DE ELIMINACION DE EMPLEADO <<<<<<\n");
+                printf("\n\t\t____________________________________________\n");
+                printf("\n\t\t| (1) ELIMINAR  UN EMPLEADO              \t|\n");
+                printf("\n\t\t| (2) CANCELAR OPERACION DE ELIMINACION  \t|\n");
+                printf("\n\t\t|__________________________________________|\n");
+
+                opcionAConfirmar = getIntLimit("\n\t\t INGRESE UNA OPCION DEL MENU: ", "\n\t\t ERROR. \n\t\t INGRESE UNA OPCION DEL MENU: ", 1, 2, 3);
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
 
                 switch(opcionAConfirmar)
                 {
@@ -407,7 +488,11 @@ int controller_saveAsText(char* path, LinkedList* pArrayListEmployee)
     int* idAux;
     char* nombreAux;
     int* sueldoAux;
+<<<<<<< HEAD
     int* horasAux;
+=======
+    int* horasAux;
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
     int retorno = -1;
 
     if(pArrayListEmployee != NULL && path != NULL)
@@ -429,7 +514,11 @@ int controller_saveAsText(char* path, LinkedList* pArrayListEmployee)
             employee_getSueldo(empleadoAux, sueldoAux);
             fprintf(pArchivo,"%d, %s, %d, %d\n", *idAux, nombreAux, *horasAux, *sueldoAux);
         }
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
         //LIBERO LA MEMORIA
         free(idAux);
         free(nombreAux);

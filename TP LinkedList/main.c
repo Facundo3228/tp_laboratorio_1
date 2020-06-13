@@ -5,6 +5,7 @@
 #include "LinkedList.h"
 #include "Controller.h"
 #include "Employee.h"
+<<<<<<< HEAD
 
 /****************************************************
     Menu:
@@ -18,6 +19,21 @@
      8. Guardar los datos de los empleados en el archivo data.csv (modo texto).
      9. Guardar los datos de los empleados en el archivo data.csv (modo binario).
     10. Salir
+=======
+
+/****************************************************
+    Menu:
+     1. Cargar los datos de los empleados desde el archivo data.csv (modo texto).
+     2. Cargar los datos de los empleados desde el archivo data.csv (modo binario).
+     3. Alta de empleado
+     4. Modificar datos de empleado
+     5. Baja de empleado
+     6. Listar empleados
+     7. Ordenar empleados
+     8. Guardar los datos de los empleados en el archivo data.csv (modo texto).
+     9. Guardar los datos de los empleados en el archivo data.csv (modo binario).
+    10. Salir
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
 *****************************************************/
 
 int main()
@@ -36,23 +52,41 @@ int main()
     int validarCargarBinario = 0;
 
     do
+<<<<<<< HEAD
     {
         printf("\n\t\t>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MENU PRINCIPAL <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n");
         printf("\n\t\t_________________________________________________________________________________________\n");
+=======
+    {
+        printf("\n\t\t>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> MENU PRINCIPAL <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n");
+        printf("\n\t\t_________________________________________________________________________________________\n");
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
         printf("\n\t\t|  (1) CARGAR LOS DATOS DE LOS EMPLEADOS DESDE EL ARCHIVO DATA.CSV (MODO TEXTO)   \t|\n");
         printf("\n\t\t|  (2) CARGAR LOS DATOS DE LOS EMPLEADOS DESDE EL ARCHIVO DATA.BIN (MODO BINARIO) \t|\n");
         printf("\n\t\t|  (3) ALTA DE EMPLEADO                                                           \t|\n");
         printf("\n\t\t|  (4) MODIFICAR DATOS DE EMPLEADOS                                               \t|\n");
+<<<<<<< HEAD
         printf("\n\t\t|  (5) BAJA DE EMPLEADOS                                                          \t|\n");
+=======
+        printf("\n\t\t|  (5) BAJA DE EMPLEADOS                                                          \t|\n");
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
         printf("\n\t\t|  (6) LISTAR EMPLEADOS                                                           \t|\n");
         printf("\n\t\t|  (7) ORDENAR EMPLEADOS                                                          \t|\n");
         printf("\n\t\t|  (8) GUARDAR LOS DATOS DE LOS EMPLEADOS EN EL ARCHIVO DATA.CSV (MODO TEXTO)     \t|\n");
         printf("\n\t\t|  (9) GUARDAR LOS DATOS DE LOS EMPLEADOS EN EL ARCHIVO DATA.BIN (MODO BINARIO)   \t|\n");
+<<<<<<< HEAD
         printf("\n\t\t| (10) SALIR                                                                      \t|\n");
         printf("\n\t\t|_______________________________________________________________________________________|\n");
 
         option = getIntLimit("\n\t\t INGRESE UNA OPCION DEL MENU: ", "\n\t\t ERROR. \n\t\t INGRESE UNA OPCION DEL MENU: ", 1, 10, 3);
 
+=======
+        printf("\n\t\t| (10) SALIR                                                                      \t|\n");
+        printf("\n\t\t|_______________________________________________________________________________________|\n");
+
+        option = getIntLimit("\n\t\t INGRESE UNA OPCION DEL MENU: ", "\n\t\t ERROR. \n\t\t INGRESE UNA OPCION DEL MENU: ", 1, 10, 3);
+
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
         switch(option)
         {
         case 1:
@@ -150,12 +184,21 @@ int main()
         case 7:
             validarSort = controller_sortEmployee(listaEmpleados);
             if(validarSort == -1)
+<<<<<<< HEAD
             {
                 printf("\n\t\t ERROR. LA LISTA NO PUDO SER ORDENADA \n");
             }
             else if(validarSort == -5)
             {
                printf("\n\t\t EL ORDEN DE LA LISTA FUE CANCELADO \n");
+=======
+            {
+                printf("\n\t\t ERROR. LA LISTA NO PUDO SER ORDENADA \n");
+            }
+            else if(validarSort == -5)
+            {
+               printf("\n\t\t EL ORDEN DE LA LISTA FUE CANCELADO \n");
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
             }
             else
             {
@@ -200,7 +243,11 @@ int main()
         system("cls");
 
     }while (option != 10);
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
     //LIBERAR LA MEMORIA
     ll_deleteLinkedList(listaEmpleados);
 

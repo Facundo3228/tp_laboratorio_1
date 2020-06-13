@@ -1,8 +1,15 @@
 #include "LinkedList.h"
+<<<<<<< HEAD
 #include "Employee.h"
 #include "funcionesGet.h"
 
 
+=======
+#include "Employee.h"
+#include "funcionesGet.h"
+
+
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
 
 /** \brief Carga los datos de los empleados desde el archivo data.csv (modo texto).
  *

@@ -3,7 +3,11 @@
 
 #include "LinkedList.h"
 #include "Employee.h"
+<<<<<<< HEAD
 #include "parser.h"
+=======
+#include "parser.h"
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
 #include "Controller.h"
 
 
@@ -54,12 +58,21 @@ int parser_EmployeeFromBinary(FILE* pFile, LinkedList* pArrayListEmployee)
     {
         while(!feof(pFile))
         {
+<<<<<<< HEAD
             pEmployee = employee_new();
 
             if(fread(pEmployee,sizeof(Employee),1,pFile))
             {
                 ll_add(pArrayListEmployee, pEmployee);
             }
+=======
+            pEmployee = employee_new();
+
+            if(fread(pEmployee,sizeof(Employee),1,pFile))
+            {
+                ll_add(pArrayListEmployee, pEmployee);
+            }
+>>>>>>> 2400a0a17c5597ff1b458f267490943ca1aab411
         }
         retorno = 0;
     }
